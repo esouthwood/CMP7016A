@@ -6,12 +6,13 @@ import soundfile as sf
 noiseFile, fs = sf.read('noise.wav', dtype='float32')
 
 # List of folders containing speech files
-folders = ['ben', 'charlie', 'chiedozie']
+folders = ['ben', 'charlie', 'chiedozie', 'carlos', 'el', 'ethan', 'francesca', 'jack', 'jake', 'james',
+           'lindon', 'marc', 'nischal', 'robin', 'ryan', 'sam', 'seth', 'william', 'bonney', 'yubo']
 
 
 for folder_name in folders:
     
-    for file_index in range(20):
+    for file_index in range(3):
         # Constructing the file path for the current speech file
         file_name = f'{folder_name}/{file_index}.wav'
         
